@@ -9,6 +9,12 @@ body {
   line-height: 1.5;
   background-color: #f2f2f2f2;
   color: #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 img {
@@ -123,5 +129,20 @@ img.avatar {
 .job .job-title-container .job-company {
   font-weight: bold;
   line-height: 1.2;
+}
+
+/*技能*/
+.skills-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 24px;
+}
+
+.skills-container ul {
+  margin-left: 20px;
+  list-style-type: disc;
 }
 /*# sourceMappingURL=style.css.map */

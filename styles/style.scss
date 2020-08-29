@@ -7,6 +7,8 @@ body {
   line-height: 1.5;
   background-color: #f2f2f2f2;
   color: #323232;
+  display: flex;
+  justify-content: center;
 }
 
 img {
@@ -97,9 +99,22 @@ img.avatar {
     justify-content: space-between;
     margin-bottom: 20px;
     font-size: 18px;
-    .job-company{
+    .job-company {
       font-weight: bold;
       line-height: 1.2;
     }
   }
 }
+
+/*技能*/
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 24px;
+  ul{
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+}
+
