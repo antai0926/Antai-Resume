@@ -145,4 +145,28 @@ img.avatar {
   margin-left: 20px;
   list-style-type: disc;
 }
+
+@media only screen and (max-width: 768px) {
+  section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .links,
+  .job-title-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .skills-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    padding: 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
