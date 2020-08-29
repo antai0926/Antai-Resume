@@ -97,4 +97,31 @@ img.avatar {
 .links .link-item img {
   margin-right: 6px;
 }
+
+/*工作經驗*/
+.job {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job .job-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.job .job-title-container .job-company {
+  font-weight: bold;
+  line-height: 1.2;
+}
 /*# sourceMappingURL=style.css.map */
