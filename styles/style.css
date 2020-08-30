@@ -146,6 +146,110 @@ img.avatar {
   list-style-type: disc;
 }
 
+/*作品集*/
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 25px 3px;
+}
+
+.portfolio .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 280px;
+      grid-template-columns: 280px;
+  -ms-grid-rows: 180px 180px 70px;
+      grid-template-rows: 180px 180px 70px;
+      grid-template-areas: 'image' 'text' 'stats';
+  border-radius: 18px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+  /*hover 放大*/
+}
+
+.portfolio .card .card-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.portfolio .card .card-image.e-clothing {
+  background-image: url("../img/e-clothing.jpg");
+}
+
+.portfolio .card .card-image.love-animal {
+  background-image: url("../img/love-animal.jpg");
+}
+
+.portfolio .card .card-image.hawaii-rent {
+  background-image: url("../img/hawaii-rent.jpg");
+}
+
+.portfolio .card .card-image.natours {
+  background-image: url("../img/Natours.jpg");
+}
+
+.portfolio .card .card-image.antai-resume {
+  background-image: url("../img/Antai-Resume.jpg");
+}
+
+.portfolio .card .card-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  background-color: #e6e6e6;
+  padding: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+}
+
+.portfolio .card .card-text h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.portfolio .card .card-text p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.portfolio .card .card-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: stats;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #c7c9c7;
+}
+
+.portfolio .card .card-stats .portfolio-link {
+  width: 25px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   section {
     -ms-grid-columns: 1fr;
@@ -167,6 +271,13 @@ img.avatar {
   }
   .container {
     padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .portfolio .card {
+    -ms-grid-rows: 180px auto 70px;
+        grid-template-rows: 180px auto 70px;
   }
 }
 /*# sourceMappingURL=style.css.map */

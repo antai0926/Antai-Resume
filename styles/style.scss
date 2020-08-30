@@ -118,6 +118,89 @@ img.avatar {
   }
 }
 
+/*作品集*/
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px 3px;
+
+  .card {
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: 180px 180px 70px;
+    grid-template-areas:
+      'image'
+      'text'
+      'stats';
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+
+    /*hover 放大*/
+    // transition: 0.5s ease;
+    // &:hover {
+    //   transform: scale(1.1);
+    //   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    // }
+
+    .card-image {
+      grid-area: image;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-size: cover;
+      &.e-clothing {
+        background-image: url('../img/e-clothing.jpg');
+      }
+      &.love-animal {
+        background-image: url('../img/love-animal.jpg');
+      }
+      &.hawaii-rent {
+        background-image: url('../img/hawaii-rent.jpg');
+      }
+      &.natours {
+        background-image: url('../img/Natours.jpg');
+      }
+      &.antai-resume {
+        background-image: url('../img/Antai-Resume.jpg');
+      }
+    }
+
+    .card-text {
+      grid-area: text;
+      background-color: rgb(230, 230, 230);
+      padding: 15px;
+      display: grid;
+      grid-template-rows: 1fr 3fr;
+      h2 {
+        margin-top: 0;
+        font-size: 28px;
+      }
+      p {
+        align-self: center;
+        color: rgb(80, 80, 80);
+        font-size: 15px;
+        font-weight: 300;
+      }
+    }
+    .card-stats {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      grid-area: stats;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      // background-color: rgb(86, 133, 172);
+      background-color: rgb(199, 201, 199);
+      .portfolio-link {
+        width: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   section {
     grid-template-columns: 1fr;
@@ -135,5 +218,11 @@ img.avatar {
 
   .container {
     padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .portfolio .card {
+    grid-template-rows: 180px auto 70px;
   }
 }
