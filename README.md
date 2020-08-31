@@ -1,4 +1,4 @@
 # Antai-Resume
-安泰的求職履歷網頁，使用flex and Grid進行切版，使用html、css/scss
+安泰個人的履歷網頁，使用HTML、CSS Flex and Grid進行切版，搭配Media Query進行RWD製作，Style部分使用SCSS進行撰寫。
 # Demo:
 https://antai-resume.netlify.app/
