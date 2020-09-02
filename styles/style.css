@@ -202,6 +202,10 @@ img.avatar {
   background-image: url("../img/Antai-Resume.jpg");
 }
 
+.portfolio .card .card-image.taiwan-weather {
+  background-image: url("../img/Taiwan-Weather.jpg");
+}
+
 .portfolio .card .card-text {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
