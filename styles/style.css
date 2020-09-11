@@ -206,6 +206,10 @@ img.avatar {
   background-image: url("../img/Taiwan-Weather.jpg");
 }
 
+.portfolio .card .card-image.arc-development {
+  background-image: url("../img/arc-development.jpg");
+}
+
 .portfolio .card .card-text {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
