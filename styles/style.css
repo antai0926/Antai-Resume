@@ -214,6 +214,10 @@ img.avatar {
   background-image: url("../img/social-media.jpg");
 }
 
+.portfolio .card .card-image.utofun {
+  background-image: url("../img/utofun.jpg");
+}
+
 .portfolio .card .card-text {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
